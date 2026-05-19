@@ -23,7 +23,7 @@
       min-height:100vh;
       overflow-x:hidden;
       color:#fff;
-      padding:20px;
+      padding:20px 15px; /* Side padding fix kiye phone ke liye */
     }
 
     body::before{
@@ -50,7 +50,7 @@
 
     .container{
       width:100%;
-      max-width:430px;
+      max-width:410px; /* Thoda chota kiya taaki background space achhi dikhe */
       background:linear-gradient(180deg,#050816,#02040c);
       border:1px solid rgba(0,255,255,0.12);
       border-radius:35px;
@@ -248,43 +248,92 @@
       line-height:1.6;
     }
 
+    /* ---- MOBILE RESPONSIVE FIX ---- */
     @media(max-width:480px){
+      body {
+        padding: 15px 12px; /* Phone ki edges se gap banayega */
+      }
+
+      .container {
+        padding: 24px 16px; /* Box ke andar ki space thodi kam ki taaki content fit ho sake */
+        border-radius: 28px;
+      }
 
       h1{
-        font-size:34px;
+        font-size:32px;
+        letter-spacing:2px;
       }
 
       .subtitle{
-        font-size:18px;
+        font-size:17px;
+        margin-bottom:22px;
+      }
+
+      .service {
+        padding: 16px 12px;
+        gap: 12px;
+        border-radius: 16px;
+      }
+
+      .icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        border-radius: 10px;
       }
 
       .service span{
-        font-size:18px;
+        font-size:16px;
       }
 
       .btn{
-        font-size:22px;
+        font-size:20px;
+        padding: 18px 10px;
+        border-radius: 20px;
       }
 
+      .redirect {
+        font-size: 15px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .card p {
+        font-size: 11px;
+        letter-spacing: 0px;
+      }
+
+      .step {
+        font-size: 15px;
+        gap: 10px;
+      }
+
+      .check {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+      }
     }
 
   </style>
-<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2029518834267783');
-fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1499059205262614');
+  fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1499059205262614&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code --> </head>
+</head>
 
 <body>
 
@@ -299,8 +348,6 @@ fbq('track', 'PageView');
     <div class="subtitle">
       Social Account & Data Recovery
     </div>
-
-    <!-- Services -->
 
     <a class="service" href="https://t.me/+bW5rSexeZXI5MjA1">
       <div class="icon">F</div>
@@ -327,8 +374,6 @@ fbq('track', 'PageView');
       <span>Full Data Recovery</span>
     </a>
 
-    <!-- Buttons -->
-
     <a class="btn" href="https://t.me/+bW5rSexeZXI5MjA1">
       CONTACT NOW
     </a>
@@ -340,8 +385,6 @@ fbq('track', 'PageView');
     <div class="redirect">
       Auto-redirecting in <b>9s...</b>
     </div>
-
-    <!-- Stats -->
 
     <div class="stats">
 
@@ -362,8 +405,6 @@ fbq('track', 'PageView');
 
     </div>
 
-    <!-- Steps -->
-
     <div class="steps">
 
       <div class="step">
@@ -382,8 +423,6 @@ fbq('track', 'PageView');
       </div>
 
     </div>
-
-    <!-- Footer -->
 
     <div class="footer">
 
